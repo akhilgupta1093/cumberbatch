@@ -57,7 +57,7 @@ function replaceNodeText(node) {
 }
 
 function generateReplacment(text) {
-    const regex = /Benedict( (John|J|J.))? Cumberbatch/gi;
+    const regex = /((Benedict( (Timothy Carlton|Timothy|Carlton))? Cumberbatch)|Cumberbatch)/gi;
 
     const adjectives = [
         "Buckingham",
