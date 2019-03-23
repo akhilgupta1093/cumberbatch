@@ -83,16 +83,17 @@ function generateReplacment(text) {
         "Barnacle",
         "Beezlebub",
         "Bourgeoisie",
-        "Snorkeldink", 
+        "Snorkeldink",
+	"Wellington",
+	"Fiddlestick",
+	"Burgerking",
+	"Bubblebath",
+	"Wimbledon",
+	"Broccoli",
+	"Bouillabaisse",
+	"Butterfree",
+	"Cogglesnatch",
     ];
-
-    const prefixAdjectives = [
-        "Large",
-        "Tiny"
-    ].concat(adjectives);
-
-    const suffixAdjectives = [
-    ].concat(adjectives);
 
     const nouns = [
         "Candycrush",
@@ -117,16 +118,21 @@ function generateReplacment(text) {
         "Crackerdong",
         "Crucifix",
         "Ampersand",
+	"Cunningsnatch",
+	"Curdlemilk",
+	"Camouflage",
+	"Crackerjack",
+	"Vegemite",
+	"Tennismatch",
+	"Cabbagepatch",
+	"Bonaparte",
     ];
 
     // TODO: perform with a single replace command
     return text.replace(regex, getName());
 
     function getName() {
-        var prefix = getRandomElement(prefixAdjectives);
-        var suffix;
-        do suffix = getRandomElement(adjectives); while(suffix === prefix);
-        return prefix + " " + suffix + " " + getRandomElement(nouns);
+        return getRandomElement(adjectives) + " " + getRandomElement(nouns);
     }
 
     function getRandomElement(array) {
